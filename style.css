@@ -9,13 +9,18 @@ html,body{
 }
 
 html{
-	background-color: red;
+	font-family: "Segoa UI light",sans-srif;
+	font-size: 18px;
+
 }
 
 body{
 	background-color: green;
 	margin: o;
 	flex-grow:1;
+	max-height: 1170px;
+	margin-right: auto;
+	margin-left: auto;
 }
 .header{
 	display:flex;
@@ -23,6 +28,7 @@ body{
 	background-color: yellow;
 	flex-shrink: 0;
 	justify-content: space-between;
+	align-items: center;
 }
 .data{
 	display: flex;
@@ -56,4 +62,33 @@ body{
 	margin: 0;
 	padding: 0;
 	display: flex;
+	justify-content: space-between;
 }
+.nav{
+	
+	display: flex;
+	flex-direction: column;
+	flex-grow:1;
+	padding-left: 50px;
+
+}
+.menu__link{
+	display: inline-block;
+	color: #ccc;
+	padding:5px 15px;
+	background: #333;
+	text-decoration: none;
+	transition: background .3s;
+
+
+}
+.menu_link:hover{
+	background: #444;
+}
+.data{
+	background: grey;
+	flex-basis: 100%;
+	flex-shrink: 0;
+
+}
+
